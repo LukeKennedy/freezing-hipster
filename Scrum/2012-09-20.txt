@@ -1,0 +1,10 @@
+SCRUM for 2012-09-20
+Tasks Completed Yesterday:
+ - n/a
+Tasks for Today:
+ - Create Diagrams for architecture
+ - Figure out our design
+Blockers: 
+ - None
+
+
