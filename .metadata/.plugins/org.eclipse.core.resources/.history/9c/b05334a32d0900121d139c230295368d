@@ -5,7 +5,7 @@ import javax.swing.JPanel;
 public abstract class Plugin {
 	private String id;
 
-	public static enum PluginState  {RUNNING, PAUSED, STOPPED}
+	public static enum PluginState  {Running, Paused, Stopped}
 	public Plugin(String id) {
 		this.id = id;
 	}

@@ -141,6 +141,7 @@ public class PluginCore {
 				// TODO Auto-generated method stub
 				int hash = pluginTabs.getSelectedComponent().hashCode();
 				Plugin p = tabToPlugin.get(hash);
+				System.out.println(p.getId());
 				p.pause();
 			}
 		});
