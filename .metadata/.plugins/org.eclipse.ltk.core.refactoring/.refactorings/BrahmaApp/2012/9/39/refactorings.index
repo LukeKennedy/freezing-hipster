@@ -1,6 +1,0 @@
-1348806799162	Rename local variable 'actionButton'
-1348806865370	Rename local variable 'runNewPluginButton'
-1348807595801	Convert local variable 'tabs' to field
-1348810239093	Rename enum constant 'Stopped'
-1348810249580	Rename enum constant 'Paused'
-1348810255742	Rename enum constant 'Running'

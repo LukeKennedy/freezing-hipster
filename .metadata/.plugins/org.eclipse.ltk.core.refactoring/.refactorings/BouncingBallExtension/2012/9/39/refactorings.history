@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename method &apos;bouncingball.BBPanel.Stop()&apos; to &apos;stop&apos;&#x0D;&#x0A;- Original project: &apos;BouncingBallExtension&apos;&#x0D;&#x0A;- Original element: &apos;bouncingball.BBPanel.Stop()&apos;&#x0D;&#x0A;- Renamed element: &apos;bouncingball.BBPanel.stop()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;Stop&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;bouncingball{BBPanel.java[BBPanel~Stop" name="stop" references="true" stamp="1348808610664" version="1.0"/>
-</session>

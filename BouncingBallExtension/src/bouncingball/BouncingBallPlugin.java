@@ -41,6 +41,7 @@ public class BouncingBallPlugin extends Plugin {
 	@Override
 	public void stop() {
 		state= PluginState.STOPPED;
+		
 		panel.stop();
 	}
 	
