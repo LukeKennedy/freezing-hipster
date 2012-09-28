@@ -35,7 +35,7 @@ public class BouncingBallPlugin extends Plugin {
 
 	@Override
 	public void stop() {
-		// Not much to do here
+		panel.stop();
 	}
 	
 	// For now we need to declare dummy main method
@@ -46,7 +46,7 @@ public class BouncingBallPlugin extends Plugin {
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
+		panel.stop();
 		
 	}
 
@@ -54,5 +54,11 @@ public class BouncingBallPlugin extends Plugin {
 	public void load() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public PluginState getState() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

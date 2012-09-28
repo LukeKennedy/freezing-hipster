@@ -53,4 +53,10 @@ public class PersonalRecordExtension extends Plugin {
 		
 	}
 
+	@Override
+	public PluginState getState() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -49,7 +49,12 @@ class BBPanel extends JPanel {
 	//////////////////////////////////////// inner listener class StopAction
 	class StopAction implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			m_bb.setAnimation(false);
+			stop();
 		}
+	}
+
+
+	public void stop() {
+		m_bb.setAnimation(false);
 	}
 }//endclass BBPanel
