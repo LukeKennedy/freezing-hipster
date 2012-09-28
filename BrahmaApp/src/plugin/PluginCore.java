@@ -33,6 +33,8 @@ public class PluginCore {
 		frame = new JFrame("Pluggable Board Application");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		
+		
 		contentPane = (JPanel)frame.getContentPane();
 		contentPane.setPreferredSize(new Dimension(700, 500));
 		bottomLabel = new JLabel("No plugins registered yet!");
@@ -48,9 +50,20 @@ public class PluginCore {
 		centerEnvelope = new JPanel(new BorderLayout());
 		centerEnvelope.setBorder(BorderFactory.createLineBorder(Color.black, 5));
 		
+		JPanel leftPanel = new JPanel();
+		leftPanel.add(scrollPane, BorderLayout.NORTH);
+		
+		JPanel newPluginPanel = new JPanel();
+		JPanel runningPluginOptions = new JPanel();
+		JButton actionButton = new JButton();
+		actionButton.setText("Start");
+		newPluginPanel.add(actionButton, BorderLayout.CENTER);
+		leftPanel.add(newPluginPanel, BorderLayout.SOUTH);
+		
+		
 		// Lets lay them out, contentPane by default has BorderLayout as its layout manager
 		contentPane.add(centerEnvelope, BorderLayout.CENTER);
-		contentPane.add(scrollPane, BorderLayout.EAST);
+		contentPane.add(leftPanel, BorderLayout.WEST);
 		contentPane.add(bottomLabel, BorderLayout.SOUTH);
 		
 		// Add action listeners

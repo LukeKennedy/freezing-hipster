@@ -21,4 +21,6 @@ public abstract class Plugin {
 	public abstract void layout(JPanel panel);
 	public abstract void start();
 	public abstract void stop();
+	public abstract void pause();
+	public abstract void load();
 }

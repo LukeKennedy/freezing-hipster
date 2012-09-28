@@ -41,4 +41,16 @@ public class PersonalRecordExtension extends Plugin {
 
 	}
 
+	@Override
+	public void pause() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void load() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

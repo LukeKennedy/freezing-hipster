@@ -43,4 +43,16 @@ public class BouncingBallPlugin extends Plugin {
 	public static void main(String[] args) {
 		
 	}
+
+	@Override
+	public void pause() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void load() {
+		// TODO Auto-generated method stub
+		
+	}
 }
