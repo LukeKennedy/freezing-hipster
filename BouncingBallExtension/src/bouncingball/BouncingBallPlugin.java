@@ -10,18 +10,18 @@ import plugin.Plugin;
  * An extension plugin.
  * 
  * @author Chandan R. Rupakheti (rupakhet@rose-hulman.edu)
- *
+ * 
  */
 public class BouncingBallPlugin extends Plugin {
 	public static final String PLUGIN_ID = "Bouncing Ball";
-	
+
 	private BBPanel panel;
 	private PluginState state;
-	
+	private String description = "A simple bouncing ball animation!";
+
 	public BouncingBallPlugin() {
-		
 		super(PLUGIN_ID);
-		state= PluginState.STOPPED;
+		state = PluginState.RUNNING;
 	}
 
 	@Override
@@ -29,22 +29,20 @@ public class BouncingBallPlugin extends Plugin {
 		parentPanel.setLayout(new BorderLayout());
 		panel = new BBPanel();
 		parentPanel.add(panel);
-		state= PluginState.STOPPED;
+		state = PluginState.RUNNING;
 	}
 
 	@Override
 	public void start() {
-		// Not much to do here
-		state= PluginState.RUNNING;
+		super.start();
+		state = PluginState.RUNNING;
 	}
 
 	@Override
 	public void stop() {
-		state= PluginState.STOPPED;
-		
-		panel.stop();
+		state = PluginState.STOPPED;
 	}
-	
+
 	// For now we need to declare dummy main method
 	// to include in manifest file
 	public static void main(String[] args) {
@@ -52,21 +50,32 @@ public class BouncingBallPlugin extends Plugin {
 
 	@Override
 	public void pause() {
-		state= PluginState.PAUSED;
-		panel.stop();
-		
+		super.pause();
+		state = PluginState.PAUSED;
+		panel.setEnabled(false);
 	}
 
-	@Override
-	public void load() {
-		// TODO Auto-generated method stub
-		state= PluginState.STOPPED;
-		
-	}
+
 
 	@Override
 	public PluginState getState() {
-		// TODO Auto-generated method stub
 		return state;
+	}
+
+	@Override
+	public void resume() {
+		super.resume();
+		state = PluginState.RUNNING;
+		panel.setEnabled(true);
+	}
+
+	@Override
+	public String getDescription() {
+		return description;
+	}
+
+	@Override
+	public Plugin getNewInstance() {
+		return new BouncingBallPlugin();
 	}
 }

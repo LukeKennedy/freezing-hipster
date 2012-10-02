@@ -4,12 +4,17 @@ import javax.swing.JPanel;
 
 public abstract class Plugin {
 	private String id;
+	private long time;
+	private long start;
 
-	public static enum PluginState  {RUNNING, PAUSED, STOPPED}
+	public static enum PluginState {
+		RUNNING, PAUSED, STOPPED
+	}
+
 	public Plugin(String id) {
 		this.id = id;
 	}
-	
+
 	public String getId() {
 		return id;
 	}
@@ -18,11 +23,33 @@ public abstract class Plugin {
 		this.id = id;
 	}
 
-	// Callback method
+	public void start() {
+		this.start = System.currentTimeMillis();
+		time = 0;
+	}
+
+	public void pause() {
+		time += System.currentTimeMillis() - start;
+	}
+
+	public void resume() {
+		start = System.currentTimeMillis();
+	}
+
+	public long getRunningTime() {
+		if(getState() == PluginState.PAUSED){
+			return time;
+		}
+		return time + System.currentTimeMillis() - start;
+	}
+
 	public abstract void layout(JPanel panel);
-	public abstract void start();
+
 	public abstract void stop();
-	public abstract void pause();
-	public abstract void load();
+
 	public abstract PluginState getState();
+
+	public abstract String getDescription();
+
+	public abstract Plugin getNewInstance();
 }

@@ -10,10 +10,15 @@ package bouncingball;
 //Author: Fred Swartz
 //Date:   February 2005
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.event.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.JPanel;
+import javax.swing.Timer;
 
 /////////////////////////////////////////////////////////////// BouncingBall
 public class BallInBox extends JPanel {
@@ -65,5 +70,8 @@ public class BallInBox extends JPanel {
 			m_ball.move();  // Move the ball.
 			repaint();      // Repaint indirectly calls paintComponent.
 		}
+	}
+	public void setEnabled(boolean b){
+		setAnimation(b);
 	}
 }//endclass

@@ -11,6 +11,7 @@ public class PersonalRecordExtension extends Plugin {
 	public static final String PLUGIN_ID = "Personal Record";
 
 	JPanel panel;
+	private String desciption = "Store stuff!"; 
 	
 	public PersonalRecordExtension() {
 		super(PLUGIN_ID);
@@ -37,24 +38,29 @@ public class PersonalRecordExtension extends Plugin {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
-		
 	}
 
-	@Override
-	public void load() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public PluginState getState() {
+		return null;
+	}
+
+	@Override
+	public void resume() {
+	}
+
+	@Override
+	public String getDescription() {
+		return desciption;
+	}
+
+	@Override
+	public Plugin getNewInstance() {
 		// TODO Auto-generated method stub
 		return null;
 	}
