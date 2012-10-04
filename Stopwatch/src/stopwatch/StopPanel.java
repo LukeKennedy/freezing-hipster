@@ -35,7 +35,7 @@ public class StopPanel extends JPanel {
 		start.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				stuff();
+				toggleTimer();
 			}
 		});
 		reset.addActionListener(new ActionListener() {
@@ -48,7 +48,7 @@ public class StopPanel extends JPanel {
 
 	}
 
-	private void stuff() {
+	private void toggleTimer() {
 		if (running) {
 			start.setText("Start!");
 			running = false;
@@ -82,7 +82,7 @@ public class StopPanel extends JPanel {
 	
 	public void resume(){
 		running = !state;
-		stuff();
+		toggleTimer();
 		start.setEnabled(true);
 		reset.setEnabled(true);
 	}

@@ -6,14 +6,14 @@ import java.util.Date;
 
 import javax.swing.JLabel;
 
-public class RunningTimeThing implements Runnable {
+public class PluginTimer implements Runnable {
 
 	private Plugin plugin;
 	private JLabel label;
 	private DateFormat formatter;
 	private boolean threadIsRunning;
 
-	public RunningTimeThing(Plugin p, JLabel l) {
+	public PluginTimer(Plugin p, JLabel l) {
 		threadIsRunning = false;
 		plugin = p;
 		label = l;
