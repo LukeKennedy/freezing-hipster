@@ -37,7 +37,7 @@ public abstract class Plugin {
 	}
 
 	public long getRunningTime() {
-		if(getState() == PluginState.PAUSED){
+		if (getState() == PluginState.PAUSED) {
 			return time;
 		}
 		return time + System.currentTimeMillis() - start;
