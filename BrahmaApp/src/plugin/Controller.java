@@ -16,7 +16,7 @@ public class Controller {
 	private DefaultListModel<String> listModel;
 	private HashMap<String, Plugin> idToPlugin;
 	private HashMap<Integer, Plugin> tabToPlugin;
-	private PluginManager pluginManager;
+	private IPluginManager pluginManager;
 	private PluginTimer updater;
 	private Thread updaterThread;
 	private View view;

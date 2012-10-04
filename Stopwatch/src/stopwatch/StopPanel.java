@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class StopPanel extends JPanel {
+	private static final long serialVersionUID = 1L;
 	private JButton start;
 	private JButton reset;
 	private JLabel timePane;
