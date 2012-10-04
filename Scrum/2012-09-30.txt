@@ -1,0 +1,10 @@
+SCRUM for 2012-09-30
+Tasks Completed Yesterday:
+ - None
+Tasks for Today:
+ - Modify BouncingBall to work properly with pause/resume
+ - Add plugin descriptions and running timer.
+Blockers: 
+ - None
+
+

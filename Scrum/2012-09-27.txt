@@ -1,0 +1,10 @@
+SCRUM for 2012-09-27
+Tasks Completed Yesterday:
+ - None
+Tasks for Today:
+ - Add tabs that plugins will run within
+ - Change application layout
+Blockers: 
+ - Figuring out how to export plugins properly
+
+

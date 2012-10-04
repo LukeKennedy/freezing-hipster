@@ -1,0 +1,10 @@
+SCRUM for 2012-10-03
+Tasks Completed Yesterday:
+ - None
+Tasks for Today:
+ - Create Stopwatch plugin
+ - Refactor PluginCore to seperate logic and UI elements
+Blockers: 
+ - None
+
+
